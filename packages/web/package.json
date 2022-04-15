@@ -1,0 +1,13 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@stitches/react": "^1.2.7",
+    "colors": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
