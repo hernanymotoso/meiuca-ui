@@ -16,7 +16,7 @@
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
-        "jsx": true
+            "jsx": true
         },
         "ecmaVersion": 12,
         "sourceType": "module"
@@ -33,7 +33,14 @@
         "react-hooks/rules-of-hooks": "error",
         "react/function-component-definition": "off",
         "react-hooks/exhaustive-deps": "warn",
-        "react/jsx-filename-extension": [1, {"extensions": [".tsx"]}],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
         "import/prefer-default-export": "off",
         "no-use-before-define": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -42,17 +49,17 @@
         "react/prop-types": "off",
         "react/require-default-props": "off",
         "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-            "ts": "never",
-            "tsx": "never"
-        }
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
         ]
     },
     "settings": {
         "import/resolver": {
-        "typescript": {}
+            "typescript": {}
         }
     }
 }
