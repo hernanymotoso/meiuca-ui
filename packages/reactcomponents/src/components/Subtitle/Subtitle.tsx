@@ -8,9 +8,9 @@ const StyledSubtitle = styled('h2', SubtitleCSS);
 
 export type SubtitleProps = React.ComponentProps<typeof StyledSubtitle> & {};
 
-export const Subtitle: React.FC<SubtitleProps> = ({children}) => {
+export const Subtitle: React.FC<SubtitleProps> = ({children, ...props}) => {
     return (
-        <StyledSubtitle>{children}</StyledSubtitle>  
+        <StyledSubtitle {...props}>{children}</StyledSubtitle>  
     );
 };
 

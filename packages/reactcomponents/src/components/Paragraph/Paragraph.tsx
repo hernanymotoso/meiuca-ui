@@ -8,9 +8,9 @@ const StyledParagraph = styled('p', ParagraphCSS);
 
 export type ParagraphProps = React.ComponentProps<typeof StyledParagraph> & {};
 
-export const Paragraph: React.FC<ParagraphProps> = ({children}) => {
+export const Paragraph: React.FC<ParagraphProps> = ({children, ...props}) => {
     return (
-        <StyledParagraph>{children}</StyledParagraph>  
+        <StyledParagraph {...props}>{children}</StyledParagraph>  
     );
 };
 

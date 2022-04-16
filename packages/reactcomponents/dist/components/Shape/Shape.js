@@ -8,7 +8,7 @@ const react_1 = __importDefault(require("react"));
 const styles_1 = require("styles");
 const web_1 = require("web");
 const StyledShape = (0, web_1.styled)('div', styles_1.Shape);
-const Shape = ({ children }) => {
-    return (react_1.default.createElement(StyledShape, null, children));
+const Shape = ({ children, props }) => {
+    return (react_1.default.createElement(StyledShape, Object.assign({}, props), children));
 };
 exports.Shape = Shape;

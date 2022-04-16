@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading, Subtitle, Paragraph, Button } from 'reactcomponents';
 import { Container } from './styles';
 
-const Card: React.FC = () => {
+const CardContent: React.FC = () => {
   console.log();
 
   return (
@@ -24,4 +24,4 @@ const Card: React.FC = () => {
   );
 };
 
-export default Card;
+export default CardContent;

@@ -1,5 +1,5 @@
 import React from 'react';
-declare const StyledShape: import("@stitches/react/types/styled-component").StyledComponent<"div", {}, {}, import("@stitches/react/types/css-util").CSS<{}, {
+declare const StyledShape: import("@stitches/react/types/styled-component").StyledComponent<"div", any, {}, import("@stitches/react/types/css-util").CSS<{}, {
     colors: {
         'color-brand-primary-01': string;
         'color-brand-primary-02': string;

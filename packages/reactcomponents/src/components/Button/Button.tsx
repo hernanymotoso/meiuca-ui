@@ -9,9 +9,9 @@ export type ButtonProps = React.ComponentProps<typeof StyledButton> & {
     t?: boolean;
 };
 
-export const Button: React.FC<ButtonProps> = ({ children }) => {
+export const Button: React.FC<ButtonProps> = ({ children, ...props}) => {
     
     return (
-        <StyledButton>{children}</StyledButton>
+        <StyledButton {...props}>{children}</StyledButton>
     );
 };

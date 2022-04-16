@@ -1,7 +1,7 @@
 import React from 'react';
 import { v4 as uuidV4 } from 'uuid';
 import Masonry from 'react-masonry-css';
-import Card from '../../components/Card';
+import CardContent from '../../components/CardContent';
 import Header from '../../components/Header';
 
 import { Container } from './styles';
@@ -46,13 +46,13 @@ const Home: React.FC = () => {
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
           >
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <CardContent />
+            <CardContent />
+            <CardContent />
+            <CardContent />
+            <CardContent />
+            <CardContent />
+            <CardContent />
           </Masonry>
         </div>
       </Container>

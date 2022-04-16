@@ -8,9 +8,9 @@ const StyledHeading = styled('h1', HeadingCSS);
 
 export type HeadingProps = React.ComponentProps<typeof StyledHeading> & {};
 
-export const Heading: React.FC<HeadingProps> = ({children}) => {
+export const Heading: React.FC<HeadingProps> = ({children, ...props}) => {
     return (
-        <StyledHeading>{children}</StyledHeading>  
+        <StyledHeading {...props} >{children}</StyledHeading>  
     );
 };
 

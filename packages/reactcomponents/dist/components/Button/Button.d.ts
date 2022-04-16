@@ -1,7 +1,5 @@
 import React from "react";
-declare const StyledButton: import("@stitches/react/types/styled-component").StyledComponent<"button", {
-    color?: "btn-primary" | "btn-secondary" | undefined;
-}, {}, import("@stitches/react/types/css-util").CSS<{}, {
+declare const StyledButton: import("@stitches/react/types/styled-component").StyledComponent<"button", any, {}, import("@stitches/react/types/css-util").CSS<{}, {
     colors: {
         'color-brand-primary-01': string;
         'color-brand-primary-02': string;
