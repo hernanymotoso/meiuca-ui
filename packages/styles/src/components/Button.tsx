@@ -24,7 +24,7 @@ export const Button = css({
          
     },
     defaultVariants: {
-
+        color: 'btn-primary',
     },
     
     // Default

@@ -1,6 +1,6 @@
 import React from "react";
 import {Button as ButtonCSS } from 'styles';
-import { styled, globalCss } from 'web';
+import { styled } from 'web';
 
 
 const StyledButton = styled('button', ButtonCSS);
