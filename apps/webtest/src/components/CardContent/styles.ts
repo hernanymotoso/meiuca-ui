@@ -3,7 +3,7 @@ import { styled } from 'web';
 
 export const Container = styled('div', {
   width: '357px',
-  height: '450px',
+  // height: '450px',
   background: '$color-neutral-05',
   borderWidth: '$border-with-thick',
   borderColor: '$color-neutral-04',

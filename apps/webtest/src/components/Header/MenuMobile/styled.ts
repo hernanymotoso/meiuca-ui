@@ -32,6 +32,7 @@ export const NavMenu = styled.nav<INavMenuProps>`
   position: absolute;
   background-color: #fff;
   transition: all 1s;
+  z-index: 99999999;
 
   margin-left: -400px;
   visibility: hidden;
