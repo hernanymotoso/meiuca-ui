@@ -5,6 +5,9 @@ node_modules
 .pnp
 .pnp.js
 
+/packages/**/node_modules
+/apps/**/node_modules
+
 # testing
 coverage
 
@@ -31,3 +34,7 @@ yarn-error.log*
 
 # turbo
 .turbo
+node_modules
+node_modules
+node_modules
+node_modules

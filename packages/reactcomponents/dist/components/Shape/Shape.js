@@ -1,0 +1,14 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Shape = void 0;
+const react_1 = __importDefault(require("react"));
+const styles_1 = require("styles");
+const web_1 = require("web");
+const StyledShape = (0, web_1.styled)('div', styles_1.Shape);
+const Shape = ({ children }) => {
+    return (react_1.default.createElement(StyledShape, null, children));
+};
+exports.Shape = Shape;

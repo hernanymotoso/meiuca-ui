@@ -1,3 +1,4 @@
+
 const BaseColors = {
     'color-brand-primary-01': '#691C07', // Brand colors
     'color-brand-primary-02': '#8F260A',

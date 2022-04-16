@@ -1,32 +1,7 @@
 import { css } from 'web';
 
 
-export const Button = css({
-    variants: {
-        color: {
-            'btn-primary': {
-                color: '$color-neutral-05', 
-                backgroundColor: '$color-brand-primary-03',
-                '&:hover': {
-                    backgroundColor: '$color-brand-primary-02'
-                }
-                
-            },
-            'btn-secondary': {
-                color: '$color-neutral-05', 
-                backgroundColor: '$color-brand-primary-01',
-                '&:hover': {
-                    backgroundColor: '$color-brand-primary-02'
-                }
-
-            }
-        }
-         
-    },
-    defaultVariants: {
-        color: 'btn-primary',
-    },
-    
+export const Button = css({  
     // Default
     border: 0,
     fontSize: '$font-size-sm',
