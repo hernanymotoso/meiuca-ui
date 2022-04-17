@@ -13,7 +13,7 @@ coverage
 .next/
 out/
 build
-dist
+
 
 # misc
 .DS_Store
@@ -37,16 +37,16 @@ node_modules
 node_modules
 node_modules
 node_modules
-dist
+
 
 
 
 /packages/**/node_modules
-/packages/**/dist
-/packages/**/build
+
+
 /apps/**/node_modules
 /apps/**/dist
 /apps/**/build
-/packages/styles/dist
-/packages/reactcomponents/dist
+
+
 .vercel
