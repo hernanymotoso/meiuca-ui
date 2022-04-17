@@ -48,4 +48,5 @@ dist
 /apps/**/dist
 /apps/**/build
 /packages/styles/dist
+/packages/reactcomponents/dist
 .vercel

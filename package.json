@@ -7,9 +7,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build --filter=webtest",
-    "buildRC": "turbo run build --filter=reactcomponents",
+    "build": "turbo run build --filter=styles && turbo run build --filter=reactcomponents && turbo run build --filter=webtest",
+    "test": "turbo run test --filter=reactcomponents && turbo run test --filter=webtest",
     "buildST": "turbo run build --filter=styles",
+    "buildRC": "turbo run build --filter=reactcomponents",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
