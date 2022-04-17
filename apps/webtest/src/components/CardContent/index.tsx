@@ -33,7 +33,8 @@ const CardContent: React.FC<ICardContentProps> = ({ newContent }) => {
       >
         {newContent.content}
       </Paragraph>
-      <Button // eslint-disable-next-line no-return-assign
+      <Button
+        // eslint-disable-next-line no-return-assign
         onClick={() => (window.location.href = `${newContent.url}`)}
       >
         Leia Mais...
