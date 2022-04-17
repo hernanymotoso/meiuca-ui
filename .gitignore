@@ -5,8 +5,6 @@ node_modules
 .pnp
 .pnp.js
 
-/packages/**/node_modules
-/apps/**/node_modules
 
 # testing
 coverage
@@ -15,6 +13,7 @@ coverage
 .next/
 out/
 build
+dist
 
 # misc
 .DS_Store
@@ -38,3 +37,14 @@ node_modules
 node_modules
 node_modules
 node_modules
+dist
+
+
+
+/packages/**/node_modules
+/packages/**/dist
+/packages/**/build
+/apps/**/node_modules
+/apps/**/dist
+/apps/**/build
+/packages/styles/dist
