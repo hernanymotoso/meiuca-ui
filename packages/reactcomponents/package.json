@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 3002",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.19.0",
@@ -22,15 +23,23 @@
     "@storybook/addon-centered": "5.3.18",
     "@storybook/addon-info": "^5.3.18",
     "@storybook/react": "5.3.18",
+    "@swc/core": "^1.2.167",
+    "@swc/jest": "^0.2.20",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "^14.1.1",
+    "@types/jest": "^27.4.1",
     "@types/react": "^18.0.5",
     "babel-loader": "8.1.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
     "prettier": "^2.6.2",
     "react": "16.13.1",
     "react-docgen-typescript-loader": "3.7.2",
     "ts-loader": "6.2.2",
+    "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   }
 }
