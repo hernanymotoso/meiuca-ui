@@ -1,16 +1,12 @@
 import React from 'react';
 
-import { Heading  as HeadingCSS } from 'styles';
+import { Heading as HeadingCSS } from 'styles';
 import { styled } from 'web';
 
 const StyledHeading = styled('h1', HeadingCSS);
 
+export type HeadingProps = React.ComponentProps<typeof StyledHeading>;
 
-export type HeadingProps = React.ComponentProps<typeof StyledHeading> & {};
-
-export const Heading: React.FC<HeadingProps> = ({children, ...props}) => {
-    return (
-        <StyledHeading {...props} >{children}</StyledHeading>  
-    );
-};
-
+export const Heading: React.FC<HeadingProps> = ({ children, ...props }) => (
+  <StyledHeading {...props}>{children}</StyledHeading>
+);

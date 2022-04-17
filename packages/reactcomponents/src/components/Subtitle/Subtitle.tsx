@@ -5,12 +5,8 @@ import { styled } from 'web';
 
 const StyledSubtitle = styled('h2', SubtitleCSS);
 
+export type SubtitleProps = React.ComponentProps<typeof StyledSubtitle>;
 
-export type SubtitleProps = React.ComponentProps<typeof StyledSubtitle> & {};
-
-export const Subtitle: React.FC<SubtitleProps> = ({children, ...props}) => {
-    return (
-        <StyledSubtitle {...props}>{children}</StyledSubtitle>  
-    );
-};
-
+export const Subtitle: React.FC<SubtitleProps> = ({ children, ...props }) => (
+  <StyledSubtitle {...props}>{children}</StyledSubtitle>
+);
