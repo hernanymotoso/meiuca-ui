@@ -46,4 +46,8 @@ export const Container = styled.div`
   .my-masonry-grid_column > div {
     margin-bottom: 30px;
   }
+
+  .divSpinner {
+    height: calc(100vh - 602px);
+  }
 `;

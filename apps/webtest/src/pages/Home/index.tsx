@@ -54,7 +54,7 @@ const Home: React.FC = () => {
     api.get<INewsResponse>('').then(response => {
       console.log('Home response', response.data);
       setNews(response.data);
-      setLoading(false);
+      setLoading(true);
     });
   }, []);
 
@@ -103,9 +103,11 @@ const Home: React.FC = () => {
             </Button>
           </div>
         ) : (
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
+          <div className="divSpinner">
+            <Spinner animation="border" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          </div>
         )}
       </Container>
       <Footer />
