@@ -1,77 +1,69 @@
-# Turborepo starter
+# Meiuca Ui Challenge
+-----------
+[![Meiuca Ui - Hernany Motoso](https://github.com/hernanymotoso/meiuca-ui/actions/workflows/meiuca-ui.yml/badge.svg)](https://github.com/hernanymotoso/meiuca-ui/actions/workflows/meiuca-ui.yml)
 
-This is an official Yarn v1 starter turborepo.
+Builded by: [hernanymotoso.com.br](https://www.hernanymotoso.com.br)
 
-## What's inside?
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
+Objetivo desenvolver os componentes de Button, Heading, Shape, Paragraph e depois compor um Card Content com todos eles seguindo a folha de Design Tokens apresentada e criar uma página de notícias consumindo o component de card e os dados da api de notícias do google.
 
-### Apps and Packages
+Levando em consideração o cenário de uma grande empresa eu pensei nos seguintes itens:
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- Ter uma estrutura que pode escalar
+    - criar um monorepo
+- Possibilidade de não ficar dependente do react
+    - criar o component library desacoplado dividido em pacotes
+        - package reactcomponents (Contém os componentes react sem estilização)
+        - package styles (Contém o CSS  estilos dos componentes)
+        - package web (Contém todos os nossos tokens)
+        - package colors (Contém todas as cores da marca/empresa)
+            
+      Dessa forma acima temos a liberdade de usar os estilos e cores em outras tecnologias
+            
+- E para trabalho em equipe com vários desenvolvedores eu pensei em usar algumas ferramentas
+    - Eslint, Prettier, editorConfig (Garante um padrão de código entre a equipe)
+    - Commitizen (Garante um padrão na escrita dos commits)
+    - Testes com Jest  (Garante o funcionamento do projeto)
+    - CI/CD (Garante que a branch master vai sempre estar funcionando)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+[See online in production](https://meiuca.hernanymotoso.com.br/)
+![meiuca](https://user-images.githubusercontent.com/28400751/163744015-ba215179-8f45-4860-a2f8-453cc15dbb94.png)
 
-### Utilities
+![mobile](https://user-images.githubusercontent.com/28400751/163744065-39fd450e-0e9e-46f9-a490-78974fba7ca6.png)![mobile2](https://user-images.githubusercontent.com/28400751/163744068-23f3f2bb-b86c-4c1e-a668-fbf4a36d1262.png)
 
-This turborepo has some additional tools already setup for you:
+tasks
+![tasks](https://user-images.githubusercontent.com/28400751/163744177-8e83c38c-c8fe-4381-9956-6056c4b18c97.png)
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
 
-## Setup
 
-This repository is used in the `npx create-turbo` command, and selected when choosing which package manager you wish to use with your monorepo (Yarn).
 
-### Build
+[See online in production](https://meiuca.hernanymotoso.com.br/)
 
-To build all apps and packages, run the following command:
 
-```
-cd my-turborepo
-yarn run build
-```
+## Technologies used
+----
+Main technologies used in the code.
 
-### Develop
+💻 [ReactJS](https://pt-br.reactjs.org/)
 
-To develop all apps and packages, run the following command:
+🧰 [Typescript](https://www.typescriptlang.org/)
 
-```
-cd my-turborepo
-yarn run dev
-```
+🪄 [Stitches](https://stitches.dev/)
 
-### Remote Caching
+✅ [Jest](https://jestjs.io/)
 
-Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+📘 [Storybook](https://storybook.js.org/)
 
-By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+📦 [Json Server](https://github.com/typicode/json-server)
 
-```
-cd my-turborepo
-npx turbo login
-```
+🛠 [Github Actions CI/CD](https://github.com/features/actions)
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## How to run the project
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
+This app is built on the [TurboRepo](https://turborepo.org/)
 
-```
-npx turbo link
-```
+* In the terminal, in the project directory, run `yarn` to install the dependencies and then `yarn test`, `yarn build` then run `cd apps/webtest` and `yarn start`to run the project.
 
-## Useful Links
+By default the front-end project will be available at http://localhost:3000
 
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/features/pipelines)
-- [Caching](https://turborepo.org/docs/features/caching)
-- [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/features/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+That's it! 
