@@ -54,7 +54,7 @@ const Home: React.FC = () => {
     api.get<INewsResponse>('').then(response => {
       console.log('Home response', response.data);
       setNews(response.data);
-      setLoading(true);
+      setLoading(false);
     });
   }, []);
 
